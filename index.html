@@ -83,7 +83,11 @@
     <button id="even_or_odd_button">Is the count even or odd?</button>
     <script>
         const even_or_odd_button = document.getElementById("even_or_odd_button");
-        even_or_odd_button.onclick = function () {
+        even_or_odd_button.onclick = function () { if(count % 2 == 1) {
+            alert('Odd');} else {
+                alert('Even');
+            }
+        }
             /* TODO 3
              *
              * Fill in this function so that it shows an
@@ -91,7 +95,9 @@
              * (from part 2, above) is even or odd.
              */
              
-        }
+             
+             
+        
     </script>
 </body>
 
